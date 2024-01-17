@@ -2,7 +2,21 @@
 <html>
 <body>
 <h1>grueyhgvjhebv</h1>
+<p>Input the temperature in fahrenheit in the box.
+  <form action="/action_page.php">
+  <label for="tempFahrenheit">Fahrenheit:</label><br>
+  <input type="text" id="tempFahrenheit" name="Fahrenheit" value="tempFahrenheit"><br>
+    
+<p>Click the button to calculate.</p>
+<button onclick="toCelsius()">The temperature in celsius is?</button>
 
+<script>
+function toCelsius(f) {
+  return (5/9) * (f-32);
+}
+
+let value = toCelsius(tempFahrenheit);
   
+</script>
 </body>
 </html>
